@@ -429,11 +429,15 @@ cursor:pointer;
 @media(max-width:900px){
 
 .sidebar{
-    display:none;
+    width:100%;
+    height:auto;
+    position:relative;
+    display:block;
 }
 
 .main-content{
     margin-left:0;
+    width:100%;
 }
 
 .dashboard-grid{
@@ -443,6 +447,8 @@ cursor:pointer;
 .topbar{
     flex-direction:column;
     gap:15px;
+}
+
 }
 }
 .ruangan-sensor{
