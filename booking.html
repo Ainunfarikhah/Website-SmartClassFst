@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Booking Ruangan - SCMS FST</title>
+
+<link rel="stylesheet" href="web.css">
+
+</head>
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <h2>🏛️ SCMS FST</h2>
+
+        <p>Smart Classroom Monitoring System</p>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">🏠 Dashboard</a>
+        </li>
+
+        <li>
+            <a href="ruangan.html">🏫 Monitoring Ruangan</a>
+        </li>
+
+        <li>
+            <a href="jadwal.html">📅 Jadwal Kuliah</a>
+        </li>
+
+        <li class="active">
+            <a href="booking.html">📝 Booking Ruangan</a>
+        </li>
+
+        <li>
+        <a href="sensor.html">📡 Dashboard Sensor</a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+        <div>
+
+            <h1>📝 Booking Ruangan</h1>
+
+            <p>Ajukan penggunaan ruangan dengan cepat</p>
+
+        </div>
+
+        <div class="status">
+            🟢 Booking Aktif
+        </div>
+
+    </div>
+
+    <!-- STATISTIK -->
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>🟢</h2>
+            <h3>4</h3>
+            <p>Ruangan Kosong</p>
+        </div>
+
+        <div class="card">
+            <h2>🟡</h2>
+            <h3>1</h3>
+            <p>Sedang Booking</p>
+        </div>
+
+        <div class="card">
+            <h2>🔴</h2>
+            <h3>5</h3>
+            <p>Digunakan</p>
+        </div>
+
+        <div class="card">
+            <h2>📋</h2>
+            <h3>12</h3>
+            <p>Total Booking</p>
+        </div>
+
+    </div>
+
+    <!-- FORM BOOKING -->
+
+    <div class="form-booking">
+
+        <h2>📌 Form Booking</h2>
+
+        <p class="sub-booking">
+            Isi data berikut untuk mengajukan ruangan
+        </p>
+
+        <form>
+
+            <label>👤 Nama Mahasiswa</label>
+            <input type="text"
+            placeholder="Masukkan Nama">
+
+            <label>🏫 Ruangan</label>
+            <select>
+
+                <option>H1</option>
+                <option>H2</option>
+                <option>H3</option>
+                <option>H4</option>
+                <option>H5</option>
+                <option>H6</option>
+                <option>H7</option>
+                <option>H8</option>
+                <option>H9</option>
+                <option>H10</option>
+
+            </select>
+
+            <label>📅 Tanggal</label>
+            <input type="date">
+
+            <label>⏰ Jam</label>
+            <input type="time">
+
+            <button type="submit">
+                🚀 Ajukan Booking
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- RIWAYAT BOOKING -->
+
+    <div class="detail-box">
+
+        <h2>📋 Riwayat Booking Terbaru</h2>
+
+        <table class="jadwal-table">
+
+            <tr>
+                <th>Nama</th>
+                <th>Ruangan</th>
+                <th>Tanggal</th>
+                <th>Jam</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Andi</td>
+                <td>H4</td>
+                <td>25/05/2026</td>
+                <td>13.00</td>
+                <td>🟡 Menunggu</td>
+            </tr>
+
+            <tr>
+                <td>Siti</td>
+                <td>H2</td>
+                <td>25/05/2026</td>
+                <td>10.00</td>
+                <td>🟢 Disetujui</td>
+            </tr>
+
+            <tr>
+                <td>Budi</td>
+                <td>H6</td>
+                <td>26/05/2026</td>
+                <td>08.00</td>
+                <td>🟢 Disetujui</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="web.js"></script>
+
+</body>
+</html>
