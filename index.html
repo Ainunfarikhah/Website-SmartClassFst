@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SCMS FST</title>
+
+<link rel="stylesheet" href="web.css">
+
+</head>
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <h2>🏛️ SCMS FST</h2>
+
+        <p>Smart Classroom Monitoring System</p>
+
+    </div>
+
+ <ul>
+
+    <li class="active">
+        <a href="index.html">🏠 Dashboard</a>
+    </li>
+
+    <li>
+        <a href="ruangan.html">🏫 Monitoring Ruangan</a>
+    </li>
+
+    <li>
+        <a href="jadwal.html">📅 Jadwal Kuliah</a>
+    </li>
+
+    <li>
+        <a href="booking.html">📝 Booking Ruangan</a>
+    </li>
+
+    <li>
+        <a href="sensor.html">📡 Dashboard Sensor</a>
+    </li>
+
+</ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+        <div>
+
+            <h1>Beranda</h1>
+
+            <p>
+                Selamat datang di Smart Classroom Monitoring System
+            </p>
+
+        </div>
+
+        <div class="topbar-right">
+
+            <div class="datetime-box">
+
+                <div id="hari">Hari</div>
+                <div id="tanggal">Tanggal</div>
+                <div id="jam">00:00:00</div>
+
+            </div>
+
+            <div class="status">
+                🟢 Online
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD STATISTIK -->
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>👨‍🎓</h2>
+            <h3>1000</h3>
+            <p>Total Mahasiswa</p>
+        </div>
+
+        <div class="card">
+            <h2>🏫</h2>
+            <h3>10</h3>
+            <p>Total Ruangan</p>
+        </div>
+
+        <div class="card">
+            <h2>📚</h2>
+            <h3>25</h3>
+            <p>Mata Kuliah Hari Ini</p>
+        </div>
+
+        <div class="card">
+            <h2>🔴</h2>
+            <h3>5</h3>
+            <p>Ruangan Dipakai</p>
+        </div>
+
+    </div>
+
+    <!-- AREA BAWAH -->
+
+    <div class="dashboard-grid">
+
+        <!-- KEHADIRAN -->
+
+        <div class="card-besar">
+
+            <h2>📊 Kehadiran Mahasiswa</h2>
+
+            <div class="lingkaran">
+
+                <div class="dalam">
+
+                    <h2>76%</h2>
+
+                    <p>760 / 1000</p>
+
+                </div>
+
+            </div>
+
+            <div class="detail-kehadiran">
+
+                <div class="mini-card">
+                    <h3>760</h3>
+                    <p>✅ Hadir</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>240</h3>
+                    <p>❌ Tidak Hadir</p>
+                </div>
+
+                <div class="mini-card">
+                    <h3>1000</h3>
+                    <p>🎓 Total</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- STATUS SISTEM -->
+
+        <div class="card-besar">
+
+            <h2>📡 Status Sistem</h2>
+
+            <div class="status-item">
+                🟢 Server Online
+            </div>
+
+            <div class="status-item">
+                🟢 Database Aktif
+            </div>
+
+            <div class="status-item">
+                🟢 Monitoring Berjalan
+            </div>
+
+            <div class="status-item">
+                🟢 Booking Aktif
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- GRAFIK BULANAN -->
+
+    <h2 class="judul">
+        📈 Penggunaan Ruangan Per Bulan
+    </h2>
+
+<div class="grafik-bulanan">
+
+        <div class="bar">
+            <span>75%</span>
+            <div class="nilai jan"></div>
+            <p>Jan</p>
+        </div>
+
+        <div class="bar">
+            <span>82%</span>
+            <div class="nilai feb"></div>
+            <p>Feb</p>
+        </div>
+
+        <div class="bar">
+            <span>68%</span>
+            <div class="nilai mar"></div>
+            <p>Mar</p>
+        </div>
+
+        <div class="bar">
+            <span>90%</span>
+            <div class="nilai apr"></div>
+            <p>Apr</p>
+        </div>
+
+        <div class="bar">
+            <span>85%</span>
+            <div class="nilai mei"></div>
+            <p>Mei</p>
+        </div>
+
+        <div class="bar">
+            <span>95%</span>
+            <div class="nilai jun"></div>
+            <p>Jun</p>
+        </div>
+
+</div>
+
+<script src="web.js"></script>
+
+</body>
+</html>

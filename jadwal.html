@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jadwal Perkuliahan - SCMS FST</title>
+
+<link rel="stylesheet" href="web.css">
+
+</head>
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <h2>🏛️ SCMS FST</h2>
+
+        <p>Smart Classroom Monitoring System</p>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">🏠 Dashboard</a>
+        </li>
+
+        <li>
+            <a href="ruangan.html">🏫 Monitoring Ruangan</a>
+        </li>
+
+        <li class="active">
+            <a href="jadwal.html">📅 Jadwal Kuliah</a>
+        </li>
+
+        <li>
+            <a href="booking.html">📝 Booking Ruangan</a>
+        </li>
+
+        <li>
+        <a href="sensor.html">📡 Dashboard Sensor</a>
+    </li>
+
+    </ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+        <div>
+
+            <h1>📅 Jadwal Perkuliahan</h1>
+
+            <p>Fakultas Sains dan Teknologi</p>
+
+        </div>
+
+        <div class="status">
+            📚 25 Mata Kuliah Hari Ini
+        </div>
+
+    </div>
+
+    <!-- CARD STATISTIK -->
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>🏫</h2>
+            <h3>10</h3>
+            <p>Ruangan Aktif</p>
+        </div>
+
+        <div class="card">
+            <h2>📚</h2>
+            <h3>25</h3>
+            <p>Mata Kuliah</p>
+        </div>
+
+        <div class="card">
+            <h2>👨‍🏫</h2>
+            <h3>18</h3>
+            <p>Dosen Mengajar</p>
+        </div>
+
+        <div class="card">
+            <h2>👨‍🎓</h2>
+            <h3>760</h3>
+            <p>Mahasiswa Hadir</p>
+        </div>
+
+    </div>
+
+    <!-- JADWAL -->
+
+    <div class="detail-box">
+
+        <h2>📋 Jadwal Hari Ini</h2>
+
+        <table class="jadwal-table">
+
+            <tr>
+                <th>Ruang</th>
+                <th>Prodi</th>
+                <th>Kelas</th>
+                <th>Mata Kuliah</th>
+                <th>Dosen</th>
+                <th>Jam</th>
+            </tr>
+
+            <tr>
+                <td>H1</td>
+                <td>Teknik Informatika</td>
+                <td>TI-4A</td>
+                <td>Pemrograman Web</td>
+                <td>Ahmad Fauzi</td>
+                <td>08.00 - 10.00</td>
+            </tr>
+
+            <tr>
+                <td>H3</td>
+                <td>Sistem Informasi</td>
+                <td>SI-4A</td>
+                <td>Analisis Sistem</td>
+                <td>Siti Rahma</td>
+                <td>08.00 - 10.00</td>
+            </tr>
+
+            <tr>
+                <td>H5</td>
+                <td>Teknik Informatika</td>
+                <td>TI-6A</td>
+                <td>Machine Learning</td>
+                <td>Budi Santoso</td>
+                <td>10.00 - 12.00</td>
+            </tr>
+
+            <tr>
+                <td>H7</td>
+                <td>Sistem Informasi</td>
+                <td>SI-2A</td>
+                <td>Basis Data</td>
+                <td>Dian Prasetyo</td>
+                <td>13.00 - 15.00</td>
+            </tr>
+
+            <tr>
+                <td>H9</td>
+                <td>Teknologi Informasi</td>
+                <td>TIF-4A</td>
+                <td>Jaringan Komputer</td>
+                <td>Rizky Firmansyah</td>
+                <td>15.00 - 17.00</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!-- KELAS BERLANGSUNG -->
+
+    <div class="dashboard-grid">
+
+        <div class="card-besar">
+
+            <h2>⏰ Sedang Berlangsung</h2>
+
+            <div class="status-item">
+                🏫 H1 - Pemrograman Web
+            </div>
+
+            <div class="status-item">
+                🏫 H3 - Analisis Sistem
+            </div>
+
+        </div>
+
+        <div class="card-besar">
+
+            <h2>📌 Jadwal Berikutnya</h2>
+
+            <div class="status-item">
+                🏫 H5 - Machine Learning
+                <br>
+                10.00 - 12.00
+            </div>
+
+            <div class="status-item">
+                🏫 H7 - Basis Data
+                <br>
+                13.00 - 15.00
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="web.js"></script>
+
+</body>
+</html>

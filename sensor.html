@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard Sensor - SCMS FST</title>
+
+<link rel="stylesheet" href="web.css">
+
+</head>
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>🏛️ SCMS FST</h2>
+        <p>Smart Classroom Monitoring System</p>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">🏠 Dashboard</a>
+        </li>
+
+        <li>
+            <a href="ruangan.html">🏫 Monitoring Ruangan</a>
+        </li>
+
+        <li>
+            <a href="jadwal.html">📅 Jadwal Kuliah</a>
+        </li>
+
+        <li>
+            <a href="booking.html">📝 Booking Ruangan</a>
+        </li>
+
+        <li class="active">
+            <a href="sensor.html">📡 Dashboard Sensor</a>
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+        <div>
+
+            <h1>📡 Dashboard Sensor</h1>
+
+            <p>
+                Monitoring kondisi ruang kelas secara realtime
+            </p>
+
+        </div>
+
+        <div class="topbar-right">
+
+            <div class="datetime-box">
+
+                <div id="hari">Hari</div>
+                <div id="tanggal">Tanggal</div>
+                <div id="jam">00:00:00</div>
+
+            </div>
+
+            <div class="status">
+                🟢 Sensor Online
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD SENSOR -->
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>🌡️</h2>
+            <h3 id="suhu">26°C</h3>
+            <p>Suhu Ruangan</p>
+        </div>
+
+        <div class="card">
+            <h2>💡</h2>
+            <h3 id="cahaya">Normal</h3>
+            <p>Intensitas Cahaya</p>
+        </div>
+
+        <div class="card">
+            <h2>🌫️</h2>
+            <h3 id="lembap">60%</h3>
+            <p>Kelembapan</p>
+        </div>
+
+        <div class="card">
+            <h2>🔊</h2>
+            <h3 id="noise">Rendah</h3>
+            <p>Kebisingan</p>
+        </div>
+
+        <div class="card">
+            <h2>🌬️</h2>
+            <h3 id="co2">Baik</h3>
+            <p>Kualitas CO₂</p>
+        </div>
+
+        <div class="card">
+            <h2>🚶</h2>
+            <h3 id="motion">Aman</h3>
+            <p>Aktivitas Ruangan</p>
+        </div>
+
+    </div>
+
+<!-- DETAIL SENSOR -->
+
+<div class="dashboard-grid">
+
+    <div class="card-besar">
+
+        <h2>📊 Ringkasan Sensor</h2>
+
+        <div class="status-item">
+            🌡️ Suhu ideal ruang kelas: 24°C - 28°C
+        </div>
+
+        <div class="status-item">
+            💡 Cahaya ideal untuk belajar
+        </div>
+
+        <div class="status-item">
+            🌫️ Kelembapan terkontrol
+        </div>
+
+        <div class="status-item">
+            🔊 Kebisingan terkendali
+        </div>
+
+        <div class="status-item">
+            🌬️ Kualitas udara dipantau
+        </div>
+
+    </div>
+
+    <div class="card-besar">
+
+        <h2>📡 Status Sensor</h2>
+
+        <div class="status-item">
+            🟢 Sensor Suhu Aktif
+        </div>
+
+        <div class="status-item">
+            🟢 Sensor Cahaya Aktif
+        </div>
+
+        <div class="status-item">
+            🟢 Sensor Kelembapan Aktif
+        </div>
+
+        <div class="status-item">
+            🟢 Sensor CO₂ Aktif
+        </div>
+
+        <div class="status-item">
+            🟢 Sensor Gerak Aktif
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SENSOR PER RUANGAN -->
+
+<div class="card-besar" style="margin-top:25px;">
+
+    <h2>🏫 Monitoring Sensor Per Ruangan</h2>
+
+    <div class="ruangan-sensor">
+
+        <div class="sensor-room"
+        onclick="detailSensor('H1')">
+            <h3>🏫 H1</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H2')">
+            <h3>🏫 H2</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H3')">
+            <h3>🏫 H3</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H4')">
+            <h3>🏫 H4</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H5')">
+            <h3>🏫 H5</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H6')">
+            <h3>🏫 H6</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H7')">
+            <h3>🏫 H7</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H8')">
+            <h3>🏫 H8</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H9')">
+            <h3>🏫 H9</h3>
+            <p>Status Sensor</p>
+        </div>
+
+        <div class="sensor-room"
+        onclick="detailSensor('H10')">
+            <h3>🏫 H10</h3>
+            <p>Status Sensor</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- DETAIL SENSOR -->
+
+<div id="detailSensor" class="card-besar" style="margin-top:25px;">
+
+    <h2>📡 Detail Sensor Ruangan</h2>
+
+    <p>Klik salah satu ruangan untuk melihat data sensor.</p>
+
+</div>
+
+<!-- GRAFIK SENSOR -->
+
+<!-- GRAFIK MONITORING SENSOR -->
+
+<div class="card-besar" style="margin-top:25px;">
+
+    <h2>📈 Grafik Monitoring Sensor Realtime</h2>
+
+    <canvas id="sensorChart"></canvas>
+
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+const ctx = document.getElementById('sensorChart');
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['08:00','09:00','10:00','11:00','12:00','13:00'],
+
+        datasets: [
+            {
+                label: 'Suhu (°C)',
+                data: [26,27,28,27,29,28],
+                borderColor: '#dc2626',
+                backgroundColor: 'rgba(220,38,38,0.1)',
+                fill: true,
+                tension: 0.4
+            },
+
+            {
+                label: 'Kelembapan (%)',
+                data: [60,62,65,63,66,64],
+                borderColor: '#2563eb',
+                backgroundColor: 'rgba(37,99,235,0.1)',
+                fill: true,
+                tension: 0.4
+            },
+
+            {
+                label: 'CO₂ (ppm)',
+                data: [100,50,70,60,80,85],
+                borderColor: '#16a34a',
+                backgroundColor: 'rgba(22,163,74,0.1)',
+                fill: true,
+                tension: 0.4
+            }
+        ]
+    },
+
+    options: {
+        responsive: true,
+        maintainAspectRatio: false
+    }
+});
+
+</script>
+
+
+<script src="web.js"></script>
+
+</body>
+</html>
